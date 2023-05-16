@@ -11,5 +11,9 @@
 			"destination": "api/server.js"
 		}
 	],
-	"routes": [{ "src": "/api/posts", "methods": ["GET", "POST", "DELETE"] }]
+	"routes": [
+		{ "src": "/api/order", "methods": ["GET", "POST", "DELETE"] },
+		{ "src": "/api/contact", "methods": ["GET", "POST", "DELETE"] },
+		{ "src": "/api/user", "methods": ["GET", "POST", "DELETE"] }
+	]
 }

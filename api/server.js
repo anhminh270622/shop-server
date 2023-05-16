@@ -4,6 +4,8 @@ const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
+const cors = require('cors');
+server.use(cors());
 server.use(middlewares)
 // Add this before server.use(router)
 server.use(jsonServer.rewriter({
@@ -17,3 +19,4 @@ server.listen(3000, () => {
 
 // Export the Server API
 module.exports = server
+
